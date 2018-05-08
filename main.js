@@ -87,7 +87,7 @@ function clicked(id) {
       }
    }
 
-   if (rSquares.length + ySquares.length == 16) {
+   if (rSquares.length + ySquares.length == 42) {
       draw();
    }
 
