@@ -95,7 +95,14 @@ function clicked(id) {
 
 
 function genWinningCombos(id) {
-   validSquareIDs = [0,1,2,3,10,11,12,13,20,21,22,23,30,31,32,33];
+   validSquareIDs = [
+                     0,1,2,3,4,5,6,
+                     10,11,12,13,14,15,16,
+                     20,21,22,23,24,25,26,
+                     30,31,32,33,34,35,36,
+                     40,41,42,43,44,45,46,
+                     50,51,52,53,54,55,56
+                  ];
    arr = [];
 
    arr.push([id, id+1, id+2, id+3])
@@ -133,8 +140,15 @@ function genWinningCombos(id) {
 
 
 function fall(id) {
-   validSquareIDs = [0,1,2,3,10,11,12,13,20,21,22,23,30,31,32,33];
-   if ((id + 10) > 33 || rSquares.includes(id + 10) || ySquares.includes(id + 10)) {
+   validSquareIDs = [
+                     0,1,2,3,4,5,6,
+                     10,11,12,13,14,15,16,
+                     20,21,22,23,24,25,26,
+                     30,31,32,33,34,35,36,
+                     40,41,42,43,44,45,46,
+                     50,51,52,53,54,55,56
+                  ];
+   if ((id + 10) > 56 || rSquares.includes(id + 10) || ySquares.includes(id + 10)) {
       gobalIDtemp = id;
    } else {
       id = id + 10;
